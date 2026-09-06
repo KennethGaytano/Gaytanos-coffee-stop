@@ -1,0 +1,239 @@
+/* =========================
+   1. Variables
+   ========================= */
+
+:root {
+    --brand-color: #8B5E3C;
+    --dark-ink: #333333;
+    --muted-grey: #777777;
+    --light-background: #FFECCB;
+}
+
+
+/* =========================
+   2. Base Styles
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: var(--dark-ink);
+    background-color: var(--light-background);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--dark-ink);
+}
+
+p {
+    color: var(--dark-ink);
+}
+
+
+/* =========================
+   3. Layout Regions
+   ========================= */
+
+header {
+    background-color: var(--brand-color);
+    padding: 20px;
+}
+
+section p {
+    text-align: center;
+    color: var(--dark-ink);
+}
+
+header h1 {
+    text-align: center;
+    margin: 10px 0 15px;
+    color: var(--light-background);
+}
+
+header p {
+    text-align: center;
+    color: var(--light-background);
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav a {
+    color: var(--light-background);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: var(--muted-grey);
+}
+
+main {
+    padding: 30px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+main section {
+    margin-bottom: 35px;
+}
+
+main h2 {
+    text-align: center;
+}
+
+footer {
+    background-color: var(--dark-ink);
+    color: var(--light-background);
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--light-background);
+    margin: 0;
+}
+
+
+/* =========================
+   4. Components
+   ========================= */
+
+/* Product Cards */
+
+.product-card {
+    background-color: var(--light-background);
+    border: 1px solid var(--muted-grey);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: center;
+}
+
+.product-card h3 {
+    margin-top: 0;
+}
+
+.product-card img {
+    display: block;
+    margin: 0 auto;
+}
+
+.product-card a {
+    color: var(--brand-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.product-card a:hover {
+    color: var(--muted-grey);
+}
+
+
+/* Product Detail Images */
+
+main section img {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* Product Detail Tables */
+
+table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: var(--light-background);
+}
+
+th,
+td {
+    padding: 10px 15px;
+    border: 1px solid var(--muted-grey);
+    text-align: center;
+}
+
+th {
+    background-color: var(--brand-color);
+    color: var(--light-background);
+}
+
+
+/* Lists */
+
+main ul {
+    padding: 0;
+    text-align: center;
+    list-style: none;
+}
+
+main li {
+    margin: 5px 0;
+}
+
+
+/* Forms */
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+fieldset {
+    padding: 20px;
+    margin: 15px 0;
+    border: 1px solid var(--muted-grey);
+}
+
+legend {
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    font-family: Arial, sans-serif;
+    padding: 8px;
+    border: 1px solid var(--muted-grey);
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: var(--brand-color);
+    color: var(--light-background);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--dark-ink);
+}
