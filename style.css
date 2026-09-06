@@ -7,6 +7,7 @@
     --dark-ink: #333333;
     --muted-grey: #777777;
     --light-background: #FFECCB;
+    --card-background: #FFE0AC;
 }
 
 
@@ -122,19 +123,25 @@ footer p {
    4. Components
    ========================= */
 
+
 /* Product Cards */
 
 .product-card {
-    background-color: var(--light-background);
+    font-family: Roboto, Arial, sans-serif;
+    background-color: var(--card-background);
     border: 1px solid var(--muted-grey);
-    padding: 20px;
-    margin: 20px auto;
+    border-radius: 10px;
+    padding: 16px;
+    margin: 0 auto 20px;
     max-width: 500px;
     text-align: center;
+    border-left: 10px solid var(--brand-color);
 }
 
 .product-card h3 {
     margin-top: 0;
+    font-size: 24px;
+    color: var(--brand-color);
 }
 
 .product-card img {
@@ -194,6 +201,11 @@ main li {
     margin: 5px 0;
 }
 
+main p {
+    text-align: center;
+    color: var(--dark-ink);
+}
+
 
 /* Forms */
 
@@ -206,11 +218,14 @@ form {
 fieldset {
     padding: 20px;
     margin: 15px 0;
-    border: 1px solid var(--muted-grey);
+    background-color: var(--card-background);
+    border: 3px solid var(--brand-color);
+    border-radius: 10px;
 }
 
 legend {
     font-weight: bold;
+    color: var(--brand-color);
 }
 
 input,
@@ -224,6 +239,13 @@ textarea {
 textarea {
     width: 100%;
     box-sizing: border-box;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    outline: 3px solid var(--brand-color);
+    outline-offset: 2px;
 }
 
 button {
