@@ -181,6 +181,9 @@ nav a:hover {
     overflow: hidden;
 
     padding-bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
 }
 
 .product-card img {
@@ -198,11 +201,15 @@ nav a:hover {
 
 .product-card p {
     margin: 10px 20px;
+    flex: 1;
 }
+
 
 .product-card a {
     text-decoration: none;
     color: var(--text-color);
+
+    margin-top: auto;
 }
 
 
