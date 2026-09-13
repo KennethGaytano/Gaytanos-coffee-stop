@@ -1,122 +1,104 @@
 <!DOCTYPE html>
-
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us</title>
+    <title>Contact Us 
+| Coffee Stop</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
     <header>
+        <div class="header-text">
+            <h1>Contact Us</h1>
+            <p>Good coffee, good moments</p>
+        </div>
 
         <nav>
-
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
         </nav>
-
-        <h1>Contact Us</h1>
-
     </header>
 
     <main>
 
-        <p>
-            Have a question or want to visit Coffee Stop?
-            We would love to hear from you!
-        </p>
+        <section>
+            <h2>Get in Touch</h2>
 
-        <p>📍 Location: Manila, Philippines</p>
+            <p>
+                Have a question or want to visit Coffee Stop?
+                We would love to hear from you!
+            </p>
 
-        <p>📞 Phone: 0912-345-6789</p>
+            <p>📍 Location: Manila, Philippines</p>
+            <p>📞 Phone: 0912-345-6789</p>
+            <p>📧 Email: coffeestop@gmail.com</p>
+        </section>
 
-        <p>📧 Email: coffeestop@gmail.com</p>
+        <section>
+            <h2>Opening Hours</h2>
 
-        <h2>Opening Hours</h2>
+            <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+        </section>
 
-        <p>Monday - Friday: 7:00 AM - 8:00 PM</p>
+        <section>
+            <h2>Send Us a Message</h2>
 
-        <p>Saturday - Sunday: 8:00 AM - 6:00 PM</p>
+            <form>
 
-        <p>
-            Follow us on social media for updates, new drinks, and special offers.
-        </p>
+                <fieldset>
+                    <legend>Your details</legend>
 
-        <h2>Send Us a Message</h2>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
 
-        <form>
+                    <br><br>
 
-            <fieldset>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
 
-                <legend>Your details</legend>
+                    <br><br>
 
-                <label for="name">Name:</label>
+                    <label for="subject">Subject:</label>
+                    <select id="subject" name="subject" required>
+                        <option value="">Choose a subject</option>
+                        <option value="question">Ask a question</option>
+                        <option value="feedback">Give feedback</option>
+                        <option value="reservation">Ask about reservations</option>
+                        <option value="other">Something else</option>
+                    </select>
 
-                <input type="text" id="name" name="name" required>
+                    <br><br>
 
-                <br><br>
+                    <label for="message">Message:</label>
+                    <br>
 
-                <label for="email">Email:</label>
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        required></textarea>
 
-                <input type="email" id="email" name="email" required>
+                </fieldset>
 
-                <br><br>
+                <div>
+                    <button type="submit">Send Message</button>
+                </div>
 
-                <label for="subject">Subject:</label>
-
-                <select id="subject" name="subject" required>
-
-                    <option value="">Choose a subject</option>
-
-                    <option value="question">Ask a question</option>
-
-                    <option value="feedback">Give feedback</option>
-
-                    <option value="reservation">Ask about reservations</option>
-
-                    <option value="other">Something else</option>
-
-                </select>
-
-                <br><br>
-
-                <label for="message">Message:</label>
-
-                <br>
-
-                <textarea
-                    id="message"
-                    name="message"
-                    rows="5"
-                    required>
-                </textarea>
-
-            </fieldset>
-
-            <div>
-
-                <button type="submit">Send message</button>
-
-            </div>
-
-        </form>
+            </form>
+        </section>
 
     </main>
 
     <footer>
-
-        <p>
-            &copy; 2026 Coffee Stop. All rights reserved.
-        </p>
-
+        <p>&copy; 2026 Coffee Stop. All rights reserved.</p>
     </footer>
 
 </body>
