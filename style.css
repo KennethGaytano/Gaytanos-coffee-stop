@@ -123,7 +123,6 @@ nav a {
     transition: color 0.3s ease;
 }
 
-/* Smooth underline highlight on hover / keyboard focus */
 nav a::after {
     content: "";
 
