@@ -27,7 +27,7 @@
     box-sizing: border-box;
 }
 
-html {
+html { 
     scroll-behavior: smooth;
 }
 
@@ -117,10 +117,39 @@ nav a {
     padding: 5px;
 
     font-size: large;
+
+    position: relative;
+
+    transition: color 0.3s ease;
+}
+
+/* Smooth underline highlight on hover / keyboard focus */
+nav a::after {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 2px;
+
+    background-color: var(--border-color);
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
 }
 
 nav a:hover {
     color: var(--border-color);
+}
+
+nav a:hover::after,
+nav a:focus-visible::after {
+    transform: scaleX(1);
 }
 
 
@@ -235,10 +264,29 @@ button {
     border-radius: 1em;
 
     cursor: pointer;
+
+    transition: background-color 0.3s ease,
+                transform 0.2s ease,
+                box-shadow 0.3s ease;
 }
 
 button:hover {
     background-color: var(--brand-hover);
+
+    transform: translateY(-2px) scale(1.05);
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+button:active {
+    transform: translateY(1px) scale(0.95);
+
+    box-shadow: none;
+}
+
+button:focus-visible {
+    outline: 2px solid var(--brand-hover);
+    outline-offset: 2px;
 }
 
 
@@ -445,5 +493,21 @@ footer {
     th,
     td {
         padding: 8px;
+    }
+}
+
+
+/* =========================
+   Reduced Motion
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms;
+
+        animation-duration: 0.01ms;
     }
 }
