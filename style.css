@@ -1,5 +1,12 @@
 /* =========================
-   1. Variables
+   Web Fonts
+   ========================= */
+
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap");
+
+
+/* =========================
+   Variables
    ========================= */
 
 :root {
@@ -17,6 +24,9 @@
     --input-background: white;
 
     --card-radius: 10px;
+
+    --font-heading: "Lora", Georgia, serif;
+    --font-body: "DM Sans", Arial, sans-serif;
 }
 
 
@@ -38,8 +48,15 @@ body {
     background-color: var(--brand-color);
     color: var(--text-color);
 
-    font-family: Arial, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+nav a {
+    font-family: var(--font-heading);
 }
 
 main {
@@ -96,7 +113,7 @@ header > * {
 
 
 /* =========================
-   4. Navigation
+   Navigation
    ========================= */
 
 nav ul {
@@ -403,6 +420,12 @@ legend {
     padding: 0 10px;
 
     font-weight: bold;
+
+    color: var(--border-color);
+}
+
+label {
+    color: var(--text-color);
 }
 
 input,
@@ -415,8 +438,8 @@ textarea {
     border: 1px solid var(--border-color);
     border-radius: 5px;
 
-    background-color: var(--input-background);
-    color: black;
+    background-color: var(--card-background);
+    color: var(--text-color);
 }
 
 textarea {
