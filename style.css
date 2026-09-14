@@ -202,7 +202,8 @@ main > section p {
 /* =========================
    Product Cards
    ========================= */
-.product-card {
+
+   .product-card {
     position: relative;
 
     background-color: var(--product-card);
