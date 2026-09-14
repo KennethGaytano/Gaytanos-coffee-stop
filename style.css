@@ -202,14 +202,13 @@ main > section p {
 /* =========================
    Product Cards
    ========================= */
-
 .product-card {
     position: relative;
 
     background-color: var(--product-card);
 
     flex: 1 1 240px;
-    max-width: 500px;
+    max-width: 350px;
 
     text-align: center;
 
