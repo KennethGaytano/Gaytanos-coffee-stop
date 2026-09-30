@@ -279,7 +279,7 @@ main > section p {
     background-color: var(--product-card);
 
     flex: 1 1 240px;
-    max-width: 350px;
+    max-width: 300px;
 
     text-align: center;
 
