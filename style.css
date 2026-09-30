@@ -265,6 +265,19 @@ aside a:focus-visible {
     text-decoration: underline;
 }
 
+aside a[aria-current="page"] {
+    display: block;
+    margin-left: -10px;
+    padding: 6px 10px;
+
+    background-color: var(--card-layer);
+    border-left: 3px solid var(--scrollbar-thumb);
+    border-radius: 0 var(--card-radius) var(--card-radius) 0;
+
+    color: var(--text-color);
+    font-weight: 700;
+}
+
 
 /* =========================
    Home Page
