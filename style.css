@@ -207,6 +207,21 @@ aside li {
     padding: 6px 0;
 }
 
+aside h2:not(:first-child) {
+    margin-top: 20px;
+}
+
+aside a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+aside a:hover,
+aside a:focus-visible {
+    color: var(--border-color);
+    text-decoration: underline;
+}
+
 
 /* =========================
    Home Page
